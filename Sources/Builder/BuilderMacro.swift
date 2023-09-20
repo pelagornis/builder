@@ -14,7 +14,7 @@
 /// }
 /// ```
 ///
-@attached(conformance)
+@attached(extension, conformances: BuilderCompatible, names: named(requirement))
 public macro Builder() = #externalMacro(
     module: "BuilderMacro",
     type: "BuilderMacro"
